@@ -6,11 +6,8 @@ export default function LandingPage() {
       <section className="hero">
         <div className="container hero-inner">
           <h1>
-            Too shy to interrupt the lecture?
-            <br />
-            <span className="accent">
-              Save your question. <span className="nowrap">Ask it later.</span>
-            </span>
+            <span className="hero-line">Too shy to interrupt the lecture?</span>{' '}
+            <span className="hero-line accent">Save your question. Ask it later.</span>
           </h1>
           <p className="lead">
             AskList is a private question list for university students. Write it down in class in
