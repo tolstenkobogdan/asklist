@@ -286,11 +286,73 @@ h3 {
 .accent {
   color: var(--accent);
 }
+.nowrap {
+  white-space: nowrap;
+}
 .lead {
   font-size: 1.15rem;
   color: var(--muted);
   margin: 0 auto 28px;
   max-width: 600px;
+}
+.preview {
+  max-width: 520px;
+  margin: 32px auto 0;
+  padding: 16px;
+  text-align: left;
+}
+.preview-label {
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+.preview-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.preview-list li {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+  font-size: 0.95rem;
+}
+.preview-box {
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  border: 2px solid var(--muted);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.preview-box-done {
+  border-color: var(--success);
+  background: var(--success);
+  color: var(--surface);
+}
+.preview-text {
+  flex: 1 1 200px;
+  min-width: 0;
+}
+.preview-done .preview-text {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+.preview .chip {
+  font-size: 0.8rem;
+}
+.preview .answered-tag {
+  font-size: 0.85rem;
 }
 .steps {
   padding-bottom: 56px;

@@ -5,22 +5,44 @@ export default function LandingPage() {
     <>
       <section className="hero">
         <div className="container hero-inner">
-          <p className="eyebrow">For students who don't want to interrupt the lecture</p>
           <h1>
-            Got a question in class?
+            Too shy to interrupt the lecture?
             <br />
-            <span className="accent">Save it now. Ask it later.</span>
+            <span className="accent">
+              Save your question. <span className="nowrap">Ask it later.</span>
+            </span>
           </h1>
           <p className="lead">
-            AskList is a private notebook for lecture questions. Jot it down in seconds, tag the
-            course, and tick it off once it's answered — in office hours, by email, or after class.
+            AskList is a private question list for university students. Write it down in class in
+            five seconds, then ask it after class or in office hours and tick it off.
           </p>
           <Link href="/signup" className="btn btn-primary btn-lg">
-            Sign up — it's free
+            Sign up free
           </Link>
           <p className="muted small">
             Already have an account? <Link href="/login">Log in</Link>
           </p>
+
+          <figure className="preview card" aria-label="Example of an AskList question list">
+            <p className="preview-label">My questions</p>
+            <ul className="preview-list">
+              <li>
+                <span className="preview-box" aria-hidden="true" />
+                <span className="preview-text">Why does the demand curve slope down?</span>
+                <span className="chip">Microeconomics</span>
+              </li>
+              <li>
+                <span className="preview-box" aria-hidden="true" />
+                <span className="preview-text">Is chapter 4 in the midterm?</span>
+                <span className="chip">Statistics</span>
+              </li>
+              <li className="preview-done">
+                <span className="preview-box preview-box-done" aria-hidden="true">✓</span>
+                <span className="preview-text">What's the difference between a p-value and alpha?</span>
+                <span className="answered-tag">Answered</span>
+              </li>
+            </ul>
+          </figure>
         </div>
       </section>
 

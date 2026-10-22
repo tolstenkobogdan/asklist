@@ -53,7 +53,7 @@ export default function Header() {
               <Link href="/login" className="nav-link">
                 Log in
               </Link>
-              <Link href="/signup" className="btn btn-primary btn-sm">
+              <Link href="/signup" className="nav-link">
                 Sign up
               </Link>
             </>
